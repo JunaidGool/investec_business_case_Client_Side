@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Entity_ID</th>
+                    <th>Risk_Taker_Group_Name</th>
+                    <th>Risk_Taker_Name</th>
+                    <th>Facility_Id</th>
+                    <th>Facility_Type</th>
+                    <th>Limit_Id</th>
+                    <th>Limit_Type</th>
+                    <th>Product</th>
+                    <th>Risk_Type</th>
+                    <th>Currency</th>
+                    <th>Exposure_Amount</th>
+                    <th>Total_Current_Limit</th>
+                    <th>Total_Approved_Limit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let limits of limits">
+                    <td>{{limits.Entity_Id}} </td>
+                    <td>{{limits.Risk_Taker_Group_Name}} </td>
+                    <td>{{limits.Risk_Taker_Name}} </td>
+                    <td>{{limits.Facility_Id}} </td>
+                    <td>{{limits.Facility_Type}} </td>
+                    <td>{{limits.Limit_Id}} </td>
+                    <td>{{limits.Limit_Type}} </td>
+                    <td>{{limits.Product}} </td>
+                    <td>{{limits.Risk_Type}} </td>
+                    <td>{{limits.Currency}} </td>
+                    <td>{{limits.Exposure_Amount}} </td>
+                    <td>{{limits.Total_Current_Limit}} </td>
+                    <td>{{limits.Total_Approved_Limit}} </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

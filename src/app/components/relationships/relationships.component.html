@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="table-responsive">
+      <table class="table">
+          <thead>
+              <tr>
+                  <th>Parent_Entity_ID</th>
+                  <th>Parent_Entity_Name</th>
+                  <th>Relationship_Type</th>
+                  <th>Entity_ID</th>
+                  <th>Entity_Name</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let relationships of relationships">
+                  <td>{{relationships.Parent_Entity_Id}}</td>
+                  <td>{{relationships.Parent_Entity_Name}} </td>
+                  <td>{{relationships.Relationship_Type}} </td>
+                  <td>{{relationships.Entity_Id}} </td>
+                  <td>{{relationships.Entity_Name}} </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
